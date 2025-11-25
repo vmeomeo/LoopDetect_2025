@@ -1,0 +1,9 @@
+Python/results
+R/results
+MATLAB/results/
+env/lib/
+src/
+literature/
+*.log
+*.aux
+diary/
