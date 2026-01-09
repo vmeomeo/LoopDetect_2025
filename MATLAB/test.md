@@ -322,15 +322,20 @@ grid on;
 
 # 5. Export \*.mlx to \*.html
 ```matlab
-path = export("MATLAB/test.mlx", outputfile="MATLAB/test.pdf")
+path = export("MATLAB/test.mlx", "MATLAB/test.pdf")
 ```
 
 ```matlabTextOutput
-The value of 'Destination' is invalid. It must satisfy the function: mayBeFileOrPath.
+path = 'MATLAB\test.pdf'
 ```
 
 ```matlab
-mdfile = export("MATLAB/test.mlx",outputfile="MATLAB/test.md", Format="markdown", EmbedImages=true, ...
+mdfile = export("MATLAB/test.mlx","MATLAB/test.md", Format="markdown", EmbedImages=true, ...
     AcceptHTML=true)
-
 ```
+
+```matlabTextOutput
+mdfile = 'MATLAB\test.md'
+```
+
+
